@@ -1,0 +1,50 @@
+Nosso estudo de caso:
+- Aplicativo para gestão de notas 
+de alunos;
+
+01) - Defina um projeto para você! 
+(Um para cada aluno)
+
+    a) Ramos de atividades: Barberaria; 
+	Salão de Beleza; Marido de Aluguel; 
+	Compartilhamento de Ferramentas; 
+	Venda de Lanches; Futebol; 
+	Basquete; Volei; Gestão de Estudos; Saúde; 
+      R:  Ramo de restaurantes
+
+    b) Escolhendo um ramo defina o escopo. Exemplo: 
+	Anamnese; Registro de resultado de Exames; Avaliação de Jogadores;
+	Formação de times/chaves; Agendamento de horário/serviço; Gestão de pedidos;
+      R:  Registro e gerenciamento de comanda
+
+   * Atividade 01
+a) Defina as seguintes variáveis e seus respectivos valores: displina, carga horária com casas decimais, professor responsável, se a disciplina está ativa e quantidade de alunos. 
+b) imprima todos os valores utilizando: i) concatenação, ii) interpolação simples e (iii) a interpolação com processamento
+   
+   * Atividade 02
+a) Aplique o que aprendeu no seu projeto.
+   
+	
+Diário de aula:
+- Nome do aplicativo com a devida descrição do escopo; 
+- Faça o material de estudo da aula (criação projeto, pasta lib, 
+  criação arquivo, método main, execução, variáveis, tipos de dados, 
+  interpolação, boas práticas, variáveis de inferência, 
+  constantes e valor final, entrada de dados, null safery, 
+  conversão de dados, métodos);
+- Exercícios do caso de uso do Professor;
+- Exercícios do seu projeto.
+
+- Dentro da lib de um projeto Flutter se encontra a main com o executavel do app
+- Seguir boas praticas no codigo
+- Padronização de nomes, EX: bool eAprovado = true;
+- Interpolação com variaveis utilizando ${} porem no dart é posivel e recomendado fazer sem as chaves, isso avisa o computador onde deve ser processado, é como uma marcação para o computador
+- Ex de print com interpolação e operador ternario: print('$nomeAluno ${idadeAluno >= 18 ? 'não precisa de responsavel' : 'precisa de responsavel'}');
+- Quebra de linha em dart EX: print(''' 
+    ....
+    ....
+''');
+ - 
+
+
+
