@@ -17,12 +17,43 @@ de alunos;
 	Formação de times/chaves; Agendamento de horário/serviço; Gestão de pedidos;
       R:  Registro e gerenciamento de comanda
 
-   * Atividade 01
+	* Atividade 01
 a) Defina as seguintes variáveis e seus respectivos valores: displina, carga horária com casas decimais, professor responsável, se a disciplina está ativa e quantidade de alunos. 
 b) imprima todos os valores utilizando: i) concatenação, ii) interpolação simples e (iii) a interpolação com processamento
    
-   * Atividade 02
+	* Atividade 02
 a) Aplique o que aprendeu no seu projeto.
+
+01) Considerando o exemplo, em qual contexto utilizamos uma variável dynamica?
+	Dynamic é utilizado em uma variavel de um sistema quando dependendo do local a maneira como se guarda o registro muda, permite qualquer tipo e pode ser alterado em tempo de execução
+
+02) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
+	dynamic n
+	dynamic cpf
+	Tanto o id do caixa quanto o numero do cpf de algum utilizador sera sempre fixo
+
+03) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
+	dynamic nome
+	dynamic marca
+	Tanto o nome quanto a marca serao armazenado de maneira diferente
+
+	* Atividade
+01) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
+	const qtdCopos
+	const nMesas
+	Irão alterar durante a execução do programa
+	final cpf
+	final telefone
+	Não irão alterar durante a execução do programa
+
+02) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
+	const idBatata
+	const idCocacola
+	O id da cocacola e da batata irao ser sempre o mesmo oque ira alterar sera a quantidade
+
+03) Qual a diferença entre uma variável, const e final. Qual devemos utilizar?
+	 const o vlaor é definido em tempo de compilação
+	 final o valor é definido em tempo de execução
    
 	
 Diário de aula:
@@ -44,7 +75,30 @@ Diário de aula:
     ....
     ....
 ''');
- - 
+ 
+Orçamento: P
 
+# CODIGO DO DIA
 
-
+void main() {
+  print("AAAAAAAAAAAAA");
+  String nome = "Gustavo";
+  int idadeAluno = 19;
+  var sobrenome;
+  sobrenome = "Polli";
+  var nome2 = "Joao";
+  bool eAprovado = false;
+  double peso = 84.5;
+  dynamic nomeAluna = "Ana";
+  String nomeAluno = "Cesar";
+  print("""
+    Nome: $nome
+    Sobrenome: $sobrenome
+    Peso: $peso
+    Idade: $idadeAluno
+  """);
+  print(
+      'Nome do aluno: $nomeAluno ${idadeAluno >= 18 ? 'aluno não precisa de responsavel' : 'aluno precisa de responsavel'}');
+  const int codigo = 69; //valor definido em tempo de compilação
+  final int codigoJogo = 198; //valor definido em tempo de execução
+}
