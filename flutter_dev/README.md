@@ -14,3 +14,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+-  Arquivo de controle de dependencias: pubspec.lock
+-  Definir Scaffold com um ElevetedButton
+-  Skills para um elemento grfico: Animações, API/APIRest, rotas, personalizações, ....
