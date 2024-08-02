@@ -1,0 +1,19 @@
+Voltando ao básico:
+  - Variável é um espaço na memória que é chamado pelo identificador (endereço de memória)
+    - Variável de valor: Guarda o valor, se altera o valor perdeu.
+    - Variável de referência: Guarda o endereço onde está os dados, a difença é que se copiar a de valor você não altera o valor da outra cópia, se alterar a de valor todos que tem essa referência é alterado o valor.
+
+Tipos de Variáveis:
+  - String
+  - int
+  - double
+  - bool
+
+Boas Práticas
+  - Nomes de variáveis tem que ter sentido.
+  - Padrões de escrita.
+    . Nomes simples, tudo minusculo: aluno.
+    . Nomes compostos, tudo minusculo e a primeira letra da próxima palavra em maisculo: 'nomeAluno'.
+    . Inglês ou português, mas nunca misturado.
+  - Concatenação: Concatenar uma string no projeto: print('${nomeAluno} ${sobreNomeAluno}');  o $ informa que é um processamento, em dart é possível utilizar: print('$nomeAluno $sobreNomeAluno'); Na documentação é recomendado utilizar da segunda forma (Somente em DART).
+  - Ternário (utilizar if e else deixa seu código mais legível): print('$nomeAluno ${idadeAluno >= 18 ? 'não precisa' : 'precisa'}');

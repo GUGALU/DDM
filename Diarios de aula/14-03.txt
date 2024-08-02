@@ -1,0 +1,28 @@
+14/03/2024
+
+Conteudo da aula:
+
+- Classes e objetos: 
+	- sintaxe (adaptação, recomendado, com e sem referência);
+	- construtor (conceitos básicos; método/função?; parâmetros posicionais, valor padrão, nomeados, nomeados obrigatórios); 
+	- atributos: sintaxe; uso do this; modificador de acesso; getters/setters - recomendação;
+	- métodos: sintaxe; parâmetros;
+	- associação: sintaxe; atribuição atributo/construtor; atribuição parâmetro posicional/nomeado; parâmetro nomeado com e sem referência;
+	- herança;
+	- classes abstratas/modelo;
+
+**Diario de Aula**
+
+-Criação e explicações sobre classes
+
+Vendo como se cria uma classe, como criar um construtor, utilizando parametros e referenciando atributos no construtor da classe.
+
+- Periodo destino a crição das classes para o nosso projeto, e tempo para tirar duvidas.
+
+retomando aula para ensinar os getters e setters em flutter, sintaxe: get -> int get z => _z; sett -> set z(int valor) => _z = valor;
+
+
+
+Aula destinada a compreenção plena de classes. Tambem comentado sobre variavel anonima.
+
+Tempo destinado para validação e para aprimoramento do projeto.

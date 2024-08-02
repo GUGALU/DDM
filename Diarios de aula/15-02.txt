@@ -1,0 +1,70 @@
+PROJETO
+  - Criação do projeto - View - Command Palette > New Flutter Project.
+  - Pasta linux, macos, android e ios dificilmente vamos mexer.
+  - Nosso projeto será feito dentro da pasta lib.
+
+Voltando ao básico:
+  - Variável é um espaço na memória que é chamado pelo identificador (endereço de memória)
+    - Variável de valor: Guarda o valor, se altera o valor perdeu.
+    - Variável de referência: Guarda o endereço onde está os dados, a difença é que se copiar a de valor você não altera o valor da outra cópia, se alterar a de valor todos que tem essa referência é alterado o valor.
+
+Tipos de Variáveis:
+  - String
+  - int
+  - double
+  - bool
+
+Boas Práticas
+  - Nomes de variáveis tem que ter sentido.
+  - Padrões de escrita.
+    . Nomes simples, tudo minusculo: aluno.
+    . Nomes compostos, tudo minusculo e a primeira letra da próxima palavra em maisculo: 'nomeAluno'.
+    . Inglês ou português, mas nunca misturado.
+  - Concatenação: Concatenar uma string no projeto: print('${nomeAluno} ${sobreNomeAluno}');  o $ informa que é um processamento, em dart é possível utilizar: print('$nomeAluno $sobreNomeAluno'); Na documentação é recomendado utilizar da segunda forma (Somente em DART).
+  - Ternário (utilizar if e else deixa seu código mais legível): print('$nomeAluno ${idadeAluno >= 18 ? 'não precisa' : 'precisa'}');
+
+
+Exemplo:
+/**
+   * i) concatenação, 
+   *   print(nomeAluno + ' ' + sobreNomeAluno);
+   * 
+   * ii) interpolação simples 
+   *   print('$nomeAluno $sobreNomeAluno');
+   * 
+   * (iii) a interpolação com processamento
+   *    print('$nomeAluno ${idadeAluno >= 18 ? 'não precisa' : 'precisa'}');
+*/
+
+Atividade 01
+  a) Defina as seguintes variáveis e seus respectivos valores: 
+  displina, carga horária com casas decimais, professor responsável, 
+  se a disciplina está ativa e quantidade de alunos. 
+
+void main() {
+    String disciplina = 'Matemática';
+    double cargaHoraria = 80.0;
+    String professorResponsavel = 'Geronimo';
+    bool aDisciplina = true;
+    int quantidadeDeAlunos = 23;
+}
+
+  b) imprima todos os valores utilizando: i) concatenação, 
+  ii) interpolação simples e (iii) a interpolação com processamento
+     print('Nome da disciplina: ' + disciplina + '\nCarga Horaria: ' + '$cargaHoraria' + '\nProfessor Responsável: ' + professorResponsavel + '\nDiscplina ativa? ' + '$aDisciplina' + '\nQuantidade de alunos: ' '$quantidadeDeAlunos');
+
+NÍVEIS DE TIPAGEM - TIPAGEM FORTE E FRACA.
+FORTEMENTE TIPADO: Tem que definir estritamente o tipo da variável o dart é fortemente tipado.
+TIPAGEM DINÂMICA: A variável pode ser flexível de acordo com o tipo dela dependendo da tipagem.
+
+Recomendação da linguagem dart:
+  String nomeAluno;
+  var sobrenomeAluno = 'Polli';
+
+DYNAMIC:
+  tipo dynamic é utilizado quando uma mesma identificação possui jeitos de atribuição diferentes, por exemplo o firebase e o banco de dados (Banco de dados - dynamic id = 55; Firebase - dynamic id = 'DF41FFHJTG')
+
+CONST E FINAL:
+  const int codigo = 20; // const - tempo de compilação.
+  final int codigoJogo = 10; // final - tempo de execução.
+  Quando é uma const ou final o valor não irá mudar, ou seja em questão de otimização as variáveis const e final são execelentes caso o valor delas não for mudar.
